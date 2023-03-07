@@ -1,14 +1,11 @@
 <script lang="ts">
-  import "@fontsource/prompt/400.css";
-  import "@fontsource/prompt/600.css";
   import { fade, fly } from "svelte/transition";
-  import { afterUpdate, onMount } from "svelte";
+  import { crossfade } from "@utils/crossfade";
 
-  export let send: any;
-  export let receive: any;
   export let profile: boolean;
 
   let step = 0;
+  const [send, receive] = crossfade;
 
   const nextStep = () => {
     step++;
@@ -25,10 +22,10 @@
 <svelte:window on:click={start} />
 
 <div
-  class={`content-1 absolute text-4xl font-semibold duration-500 ${step > 1 && "translate-y-[-50%]"}`}
+  class={`content-1 absolute text-4xl font-bold duration-500 ${step > 1 && "translate-y-[-50%]"}`}
   transition:fade
 >
-  <section class={` content-2 duration-500 ${step > 0 && "translate-x-[-100%]"} ${step > 1 && " text-3xl opacity-50"}`}>
+  <section class={` content-2 duration-500 ${step > 0 && "translate-x-[-80%]"} ${step > 1 && " text-3xl opacity-50"}`}>
     <span>Hello</span>
     <span>
       {#if step == 0}

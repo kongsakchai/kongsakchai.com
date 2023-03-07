@@ -1,15 +1,17 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import "./styles.css";
+  import "@fontsource/prompt/400.css";
+  import "@fontsource/prompt/600.css";
+  import "@fontsource/m-plus-rounded-1c/400.css";
+  import "@fontsource/m-plus-rounded-1c/700.css";
+  import "@fontsource/m-plus-rounded-1c/500.css";
 
-  let docTitle: string;
+  import { onMount } from "svelte";
 
-  const changeTitle = (str: string) => {
-    document.title = str;
-  };
+  const changeTitle = (str: string) => (document.title = str);
 
   onMount(() => {
-    docTitle = document.title;
+    document.title = "Kong Sakchai";
   });
 </script>
 

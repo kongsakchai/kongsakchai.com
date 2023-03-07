@@ -1,15 +1,12 @@
 <script lang="ts">
-  import Intro from "../components/firstPage/intro.svelte";
-  import Profile from "../components/firstPage/profile.svelte";
-  import { crossfade } from "../utils/crossfade";
-
-  const [send, receive] = crossfade;
-
+  import Home from "src/routes/home/+page.svelte";
+  import Intro from "@components/intro/intro.svelte";
+  import Profile from "@components/intro/profile.svelte";
   let profile = false;
 </script>
 
 {#if !profile}
-  <Intro {send} {receive} bind:profile />
+  <Intro bind:profile />
 {:else}
-  <Profile {send} {receive} />
+  <Profile />
 {/if}

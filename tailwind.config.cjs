@@ -7,7 +7,8 @@ module.exports = {
 
       },
       fontFamily: {
-        prompt: ["Prompt", "sans-serif"]
+        prompt: ["Prompt", "sans-serif"],
+        mplus: ["M PLUS Rounded 1c", "sans-serif"]
       }
     },
   },

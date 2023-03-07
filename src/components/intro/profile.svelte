@@ -1,55 +1,68 @@
 <script lang="ts">
-  import "@fontsource/prompt/400.css";
-  import "@fontsource/prompt/600.css";
+  import { crossfade } from "@utils/crossfade";
   import { fade } from "svelte/transition";
 
-  export let send: any;
-  export let receive: any;
+  const [send, receive] = crossfade;
+
+  let absolute = false;
 </script>
 
-<div class={`content-1 font-prompt font-semibold`}>
+<div class={`content-1 font-mplus font-bold ${absolute && "absolute"}`}>
   <img
-    transition:fade={{ delay: 1200 }}
+    in:fade={{ delay: 1200 }}
+    out:send={{ key: "profile" }}
     src="/profile.jpg"
     class=" rounded-full aspect-square w-[150px]"
     alt="profile"
   />
   <section class=" content-2">
     <h1 in:receive={{ key: "myname" }} out:send={{ key: "myname" }} class="name-3">I'm Kong 🧑‍💻</h1>
-    <p transition:fade={{ delay: 1200 }} class=" text-xl font-normal">(Sakchai Paoin) Front-end developer</p>
-    <div class="font-normal flex flex-row justify-start items-center gap-3">
+    <p in:fade={{ delay: 1200 }} out:fade class=" text-xl font-light">(Sakchai Paoin) Full-Stack Developer</p>
+    <section class=" font-light flex flex-row justify-start items-center gap-3">
       <a
         title="My Github"
-        transition:fade={{ delay: 1300 }}
+        in:fade={{ delay: 1300 }}
+        out:send={{ key: "github" }}
         rel="noreferrer"
         href="https://github.com/kongsakchai"
         target="_blank"
+        class=" hover:-rotate-12 transition-all"
       >
-        <img src="/github-mark.svg" alt="github" class=" w-8" />
+        <img src="/icons/github-mark.svg" alt="github" class=" w-8" />
       </a>
       <a
         title="My LinkedIn"
-        transition:fade={{ delay: 1400 }}
+        in:fade={{ delay: 1400 }}
+        out:send={{ key: "linkedin", delay: 100 }}
         rel="noreferrer"
         href="https://www.linkedin.com/in/sakchai-paoin"
         target="_blank"
+        class=" hover:rotate-12 transition-all"
       >
-        <img src="/linkedin-icon.svg" alt="likedin" class=" w-9" />
+        <img src="/icons/linkedin-icon.svg" alt="likedin" class=" w-9" />
       </a>
       <a
         title="My Email"
-        transition:fade={{ delay: 1500 }}
+        in:fade={{ delay: 1500 }}
+        out:send={{ key: "email", delay: 200 }}
         rel="noreferrer"
         href="mailto:kongs.sakchaii@gmail.com"
         target="_blank"
+        class="hover:-rotate-12 transition-all"
       >
-        <div class="email-popup">
-          <span>kongs.sakchaii</span>
-          <span>@</span>
-          <span>gmail.com</span>
-        </div>
+        <img src="/icons/email.svg" alt="likedin" class=" w-9" />
       </a>
-    </div>
+      <a
+        title="Next"
+        href="/home"
+        on:click={() => (absolute = true)}
+        in:fade={{ delay: 1600 }}
+        out:fade
+        class=" hover:translate-x-1 transition-all"
+      >
+        <img src="/icons/arrow.svg" alt="next" class=" w-9" />
+      </a>
+    </section>
   </section>
 </div>
 
@@ -82,7 +95,7 @@
     border-radius: 999px;
     color: white;
     overflow: hidden;
-    transition: width 500ms;
+    transition: all 500ms;
   }
 
   .email-popup:hover {
@@ -94,11 +107,13 @@
   .email-popup > :nth-child(odd) {
     overflow: hidden;
     max-width: 0%;
+    transition: all 0ms;
+    transition-delay: 0ms;
   }
 
   .email-popup:hover > :nth-child(odd) {
     max-width: 100%;
     transition: all 1000ms;
-    transition-delay: 100ms;
+    transition-delay: 300ms;
   }
 </style>

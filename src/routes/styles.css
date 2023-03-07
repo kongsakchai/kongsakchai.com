@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    font-family: "Prompt", sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -19,19 +19,14 @@ p {
     line-height: 1.5;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 h1 {
     font-size: 2rem;
-    text-align: center;
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
