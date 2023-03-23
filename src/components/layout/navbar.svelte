@@ -5,13 +5,13 @@
 </script>
 
 <nav class=" bg-white fixed top-0 left-0 w-screen flex flex-row justify-between items-center py-4 px-12 shadow-lg">
-  <h2
+  <a title="intro" href="/intro"><h2
     class="text-left whitespace-nowrap font-mplush font-bold"
     in:receive={{ key: "myname" }}
     out:send={{ key: "myname" }}
   >
     Kong 🧑‍💻
-  </h2>
+  </h2></a>
   <div class=" flex flex-row justify-end items-center gap-5">
     <a title="Home" href="/">Home</a>
     <a title="Projects" href="/projects">Projects</a>
