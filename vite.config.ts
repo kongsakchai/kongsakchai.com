@@ -4,6 +4,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [sveltekit(), tsconfigPaths()],
+  server: {
+    host: true,
+  },
   ssr: {
     noExternal: ["three"],
   },

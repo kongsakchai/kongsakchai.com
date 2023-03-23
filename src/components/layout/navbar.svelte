@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import { crossfade } from "@utils/crossfade";
 
   const [send, receive] = crossfade;
 </script>
 
-<nav class=" bg-white fixed top-0 left-0 w-screen flex flex-row justify-between items-center py-4 px-12 border-b-2">
+<nav class=" bg-white fixed top-0 left-0 w-screen flex flex-row justify-between items-center py-4 px-12 shadow-lg">
   <h2
     class="text-left whitespace-nowrap font-mplush font-bold"
     in:receive={{ key: "myname" }}
@@ -12,7 +12,10 @@
   >
     Kong 🧑‍💻
   </h2>
-  <div class=" flex flex-row justify-end items-center gap-3">
+  <div class=" flex flex-row justify-end items-center gap-5">
+    <a title="Home" href="/">Home</a>
+    <a title="Projects" href="/projects">Projects</a>
+    <a title="Blogs" href="/blogs">Blogs</a>
     <a
       title="My Github"
       in:receive={{ key: "github" }}
@@ -22,7 +25,7 @@
       target="_blank"
       class=" hover:-rotate-12 transition-all"
     >
-      <img src="/icons/github-mark.svg" alt="github" class=" w-8" />
+      <img src="/icons/github-mark.svg" alt="github" class=" w-7" />
     </a>
     <a
       title="My LinkedIn"
@@ -33,7 +36,7 @@
       target="_blank"
       class=" hover:rotate-12 transition-all"
     >
-      <img src="/icons/linkedin-icon.svg" alt="likedin" class=" w-9" />
+      <img src="/icons/linkedin-icon.svg" alt="likedin" class=" w-8" />
     </a>
     <a
       title="My Email"
@@ -44,10 +47,11 @@
       target="_blank"
       class="hover:-rotate-12 transition-all"
     >
-      <img src="/icons/email.svg" alt="likedin" class=" w-9" />
+      <img src="/icons/email.svg" alt="likedin" class=" w-8" />
     </a>
   </div>
 </nav>
+<div class=" text-sm" />
 <slot />
 
 <style>

@@ -1,0 +1,58 @@
+{
+  "work": [
+    {
+      "year": 2022,
+      "name": "Frontend @ LUCKY CAT TECH SOLUTION",
+      "description": []
+    },
+    {
+      "year": 2022,
+      "name": "Unity Engine Workshop Speaker @ Satri Angthong School.",
+      "description": []
+    }
+  ],
+  "award": [
+    {
+      "year": 2022,
+      "name": "National Software Contest 24",
+      "description": ["Final round of project competition", "Project competition"]
+    },
+    {
+      "year": 2022,
+      "name": "Magic Hackathon",
+      "description": ["The 2nd place winner in hackathon competition", "Web application"]
+    },
+    {
+      "year": 2021,
+      "name": "Time’s Challenge. Show Your Ability",
+      "description": ["Unity Certified User: Programmer", " Final round of project competition"]
+    },
+    {
+      "year": 2020,
+      "name": "National Software Contest 22",
+      "description": ["Final round of project competition", "Project competition"]
+    },
+    {
+      "year": 2017,
+      "name": "Tokla 7th",
+      "description": ["1 of 14 projects was selected by SCB Foundation"]
+    },
+    {
+      "year": 2016,
+      "name": "Tokla 6th",
+      "description": ["1 of 14 projects was selected by SCB Foundation"]
+    }
+  ],
+  "education": [
+    {
+      "year": "Bachelor Degree",
+      "name": "King Mongkut's University of Technology Thonburi",
+      "description": ["Computer engineering"]
+    },
+    {
+      "year": "High School",
+      "name": "Satri Angthong School",
+      "description": ["Science - Mathematics programs"]
+    }
+  ]
+}

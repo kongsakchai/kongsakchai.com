@@ -1,0 +1,18 @@
+{
+  "blogs": [
+    {
+      "title": "หลังจากลองใช้ Godot Engine",
+      "from": "Medium",
+      "image": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*yqZ6m8wXtwitXmUhDJPHkQ.png",
+      "year": "2022",
+      "path": "https://medium.com/@kongsakchai/หลังจากลองใช้-godot-engine-9f6fbacfb4b"
+    },
+    {
+      "title": "สรุป SOLID Design Principles",
+      "from": "Medium",
+      "image": "https://i.imgur.com/YEz2J4d.png",
+      "year": "2022",
+      "path": "https://medium.com/@kongsakchai/หลังจากลองใช้-godot-engine-9f6fbacfb4b"
+    }
+  ]
+}

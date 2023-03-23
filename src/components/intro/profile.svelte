@@ -17,8 +17,8 @@
   />
   <section class=" content-2">
     <h1 in:receive={{ key: "myname" }} out:send={{ key: "myname" }} class="name-3">I'm Kong 🧑‍💻</h1>
-    <p in:fade={{ delay: 1200 }} out:fade class=" text-xl font-light">(Sakchai Paoin) Full-Stack Developer</p>
-    <section class=" font-light flex flex-row justify-start items-center gap-3">
+    <p in:fade={{ delay: 1200 }} out:fade class=" text-lg font-normal">(Sakchai Paoin) Full-Stack Developer</p>
+    <section class=" flex flex-row justify-start items-center gap-3">
       <a
         title="My Github"
         in:fade={{ delay: 1300 }}
@@ -54,7 +54,7 @@
       </a>
       <a
         title="Next"
-        href="/home"
+        href="/"
         on:click={() => (absolute = true)}
         in:fade={{ delay: 1600 }}
         out:fade
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
     user-select: none;
   }
 

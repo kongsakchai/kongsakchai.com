@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -28,5 +28,15 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+  }
