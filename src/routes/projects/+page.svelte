@@ -19,7 +19,6 @@
     }
     return v.filter.includes(tagSelect) || tagSelect === "all";
   };
-
 </script>
 
 <div class=" page py-[100px]">
