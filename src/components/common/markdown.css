@@ -1,0 +1,95 @@
+.mark {
+  text-align: left;
+}
+
+.mark h1,
+.mark h2,
+.mark h3,
+.mark h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.mark h1{
+  
+}
+
+.mark p {
+  margin: 0rem 0rem 1rem;
+}
+
+.mark img,
+.mark canvas,
+.mark iframe,
+.mark video,
+.mark svg,
+.mark select,
+.mark textarea {
+  margin: 0rem 0rem 1rem;
+  max-width: 100%;
+}
+
+.mark img {
+  border-radius: 0.5rem;
+}
+
+.mark a {
+  color: #1770F0;
+  text-decoration: none;
+}
+
+.mark p * {
+  display: inline-block;
+  margin: 0px;
+}
+
+.mark a:hover,
+.mark a:focus,
+.mark a:active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.mark blockquote {
+  margin: 0rem 0rem 1rem;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  line-height: 1rem;
+}
+
+.mark blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  border-left: #161B22 2px solid;
+  padding-left: 0.5rem;
+}
+
+.mark blockquote:after {
+  color: #ccc;
+  content: close-quote;
+}
+
+.mark code {
+  width: 100%;
+}
+
+.mark pre {
+  margin: 0rem 0rem 1rem;
+  width: 100%;
+  background-color: #161B22;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  overflow: auto;
+}
+
+.mark li {
+  margin-left: 2rem;
+  position: relative;
+}
+
+li::before {
+  position: absolute;
+  top: 0;
+  left: -1.25rem;
+  content: "•";
+  display: inline-block;
+}

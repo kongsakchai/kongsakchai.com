@@ -15,10 +15,6 @@
     -webkit-text-size-adjust: 100%;
 }
 
-p {
-    line-height: 1.5;
-}
-
 h1 {
     font-size: 2rem;
 }
@@ -31,12 +27,26 @@ h3 {
     font-size: 1.25rem;
 }
 
-.page {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: auto;
-  }
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+p {
+    line-height: 1.5rem;
+}

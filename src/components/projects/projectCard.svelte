@@ -5,11 +5,14 @@
   export let data: Project;
 
   const onClick = () => {
-    goto("projects/" + data.name.replaceAll(" ", "-"));
+    goto("projects/" + data.name.replaceAll(" ", "_"));
   };
 </script>
 
-<div class="h-[300px] aspect-square relative rounded-md overflow-hidden">
+<a
+  href={"projects/" + data.name.replaceAll(" ", "_")}
+  class="h-[300px] aspect-square relative rounded-md overflow-hidden"
+>
   <img src={data.image} alt={data.name} class=" w-full h-full object-cover" />
   <section
     class=" opacity-0 hover:opacity-100 transition-all duration-500 absolute w-full h-full top-0 left-0 p-5 bg-shadow text-white flex flex-col gap-3"
@@ -17,9 +20,9 @@
     <h3 class=" font-bold">{data.name} ({data.year})</h3>
     <p>{data.description}</p>
     <p>{data.tag.join(", ")}</p>
-    <button on:click={onClick} class="btn mt-auto">เพิ่มเติม</button>
+    <button class="btn mt-auto">เพิ่มเติม</button>
   </section>
-</div>
+</a>
 
 <style>
   .btn {

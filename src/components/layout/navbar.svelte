@@ -1,21 +1,23 @@
 <script lang="ts">
   import { crossfade } from "@utils/crossfade";
 
+  export let path: string;
   const [send, receive] = crossfade;
 </script>
 
 <nav class=" bg-white fixed top-0 left-0 w-screen flex flex-row justify-between items-center py-4 px-12 shadow-lg">
-  <a title="intro" href="/intro"><h2
-    class="text-left whitespace-nowrap font-mplush font-bold"
-    in:receive={{ key: "myname" }}
-    out:send={{ key: "myname" }}
+  <a title="KongSakchai" href="/"
+    ><h3
+      class="text-left whitespace-nowrap font-mplush font-bold"
+      in:receive={{ key: "myname" }}
+    >
+      Kong 🧑‍💻
+    </h3></a
   >
-    Kong 🧑‍💻
-  </h2></a>
-  <div class=" flex flex-row justify-end items-center gap-5">
-    <a title="Home" href="/">Home</a>
-    <a title="Projects" href="/projects">Projects</a>
-    <a title="Blogs" href="/blogs">Blogs</a>
+  <div class=" flex flex-row justify-end items-center gap-5 text-base">
+    <a title="Projects" href="/projects" class={`${path.includes("/projects") && "font-bold"}`}>Projects</a>
+    <a title="Blogs" href="/blogs" class={`${path.includes("/blogs") && "font-bold"}`}>Blogs</a>
+    <a title="Introduct" href="/intro" class={`${path === "/intro" && "font-bold"}`}>Introduct</a>
     <a
       title="My Github"
       in:receive={{ key: "github" }}
@@ -55,16 +57,4 @@
 <slot />
 
 <style>
-  .email {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #5a5a5a;
-    border-radius: 999px;
-    color: white;
-    overflow: hidden;
-    transition: all 500ms;
-  }
 </style>

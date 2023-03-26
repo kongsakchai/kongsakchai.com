@@ -14,7 +14,8 @@
     "paths": {
       "@utils/*": ["src/utils/*"],
       "@components/*": ["src/components/*"],
-      "@stores/*": ["src/stores/*"]
+      "@stores/*": ["src/stores/*"],
+      "@data/*": ["src/data/*"],
     }
   }
   // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias

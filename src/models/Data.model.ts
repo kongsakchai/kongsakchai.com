@@ -29,6 +29,6 @@ export interface Blogslink {
   image: string;
   year: string;
   path: string;
-  description: string;
+  description?: string;
   from: string;
 }

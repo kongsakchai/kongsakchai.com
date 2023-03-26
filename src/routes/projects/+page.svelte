@@ -1,10 +1,14 @@
 <script lang="ts">
+  import PageComponent from "@components/layout/pageComponent.svelte";
   import ActiveButton from "@components/projects/activeButton.svelte";
-  import Block from "@components/projects/Block.svelte";
+  import ProjectCard from "@components/projects/projectCard.svelte";
+  import { crossfade } from "@utils/crossfade";
   import type { Project } from "src/models/Data.model";
   import { flip } from "svelte/animate";
   import { fly } from "svelte/transition";
   import type { PageData } from "./$types";
+
+  const [send, receive] = crossfade;
 
   let tagSelect = "all";
   export let data: PageData;
@@ -19,9 +23,10 @@
     }
     return v.filter.includes(tagSelect) || tagSelect === "all";
   };
+
 </script>
 
-<div class=" page py-[100px]">
+<PageComponent align="center" class="py-[150px]">
   <div
     in:fly={{ y: -100, duration: 1000 }}
     out:fly={{ y: -50, duration: 500 }}
@@ -43,8 +48,8 @@
   <div class="grid grid-cols-3 gap-5 mt-10 w-[950px]">
     {#each data.projects.filter(filter) as project (project.name)}
       <div animate:flip={{ duration: 1000 }} in:fly={{ y: 100, duration: 1000 }} out:fly={{ y: 10, duration: 500 }}>
-        <Block data={project} />
+        <ProjectCard data={project} />
       </div>
     {/each}
   </div>
-</div>
+</PageComponent>

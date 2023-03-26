@@ -9,13 +9,7 @@
 
 <div class={`content-1 font-mplus font-bold`}>
   <div in:fade={{ delay: 1200 }} out:send={{ key: "profile" }}>
-    <img
-      in:fade={{ delay: 1200 }}
-      out:send={{ key: "profile" }}
-      src="/profile.jpg"
-      class=" rounded-full aspect-square w-[150px]"
-      alt="profile"
-    />
+    <img src="/profile.jpg" class=" rounded-full aspect-square w-[150px]" alt="profile" />
   </div>
   <section class=" content-2">
     <h1 in:receive={{ key: "myname" }} out:send={{ key: "myname" }} class="name-3">I'm Kong 🧑‍💻</h1>
