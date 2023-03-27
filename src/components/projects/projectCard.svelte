@@ -13,7 +13,7 @@
   href={"projects/" + data.name.replaceAll(" ", "_")}
   class="h-[300px] aspect-square relative rounded-md overflow-hidden"
 >
-  <img src={data.image} alt={data.name} class=" w-full h-full object-cover" />
+  <img src={data.image} alt={data.name} class=" h-[300px] w-[300px] object-cover" />
   <section
     class=" opacity-0 hover:opacity-100 transition-all duration-500 absolute w-full h-full top-0 left-0 p-5 bg-shadow text-white flex flex-col gap-3"
   >

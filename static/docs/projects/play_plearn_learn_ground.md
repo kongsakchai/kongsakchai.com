@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align = "center">Play Plearn Learn Ground</h1>
+    <h1 align = "center">Play Plern Learn Ground</h1>
 </p>
 <p align="center">
 🎮 Play Plern Learn Ground เป็น Application game สำหรับการเรียนรู้📚คำศัพท์ภาษาอังกฤษในรูปแบบเกม Multiplayer online ภายในเกมจะประกอบไปด้วยมินิเกมต่าง ๆ ได้แก่ Quiz Arena, Maze Runner, Word Chain, What Sam Says?

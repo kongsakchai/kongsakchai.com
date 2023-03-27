@@ -33,7 +33,7 @@
       </p>
     </section>
     <section in:fly={{ y: 100, duration: 700 }} class="w-full flex flex-row justify-center items-center">
-      <button on:click={() => goto("/projects")} on:keypress class="button p-2 bg-red-400 text-white">
+      <button on:click={() => goto("/projects")} on:keypress class="button p-2 bg-sky-400 text-white">
         My Projects {">"}
       </button>
     </section>
@@ -52,6 +52,11 @@
     <section in:fly={{ y: 100, duration: 1100 }} class=" flex items-start flex-col gap-2 w-full">
       <h3 class="topic-under-line">Skills</h3>
       <Skill />
+    </section>
+    <section in:fly={{ y: 100, duration: 1200 }} class="w-full flex flex-row justify-center items-center">
+      <a href="/Sakchai-Resume.pdf" target="_blank" class="button p-2 bg-sky-400 text-white">
+        My Resume {">"}
+      </a>
     </section>
   </div>
 </PageComponent>

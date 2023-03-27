@@ -9,10 +9,6 @@
   import { navigating, page } from "$app/stores";
 
   let onNavbar = false;
-
-  onMount(() => {
-    document.title = "Kong Sakchai";
-  });
 </script>
 
 {#if $page.url.pathname !== "/intro"}

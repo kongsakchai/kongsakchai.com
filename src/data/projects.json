@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Play Plearn Learn Ground",
+      "name": "Play Plern Learn Ground",
       "tag": ["Game", "Multiplayer", "Education"],
       "image": "https://play-lh.googleusercontent.com/BSQfUIiopNhDItzHVqsRYRPOmP9i2OpCJyg14mPpVV1EkSAVJkQVNU9uPDdfTDcDPHYc=w526-h296-rw",
       "year": 2018,
@@ -11,7 +11,7 @@
     {
       "name": "Tangram Craft World",
       "tag": ["Game", "Multiplayer", "Pluzzle"],
-      "image": "https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/305070539_478107240994236_7105585586437739023_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFB4_eEK1mwmuGULyB7mF1TooQFAthaVkeihAUC2FpWRxob2iBA_9YR0ZOD3asnVTNNebp5CeYOtVe3x2vUcXyt&_nc_ohc=QFO0qGTzN-EAX_meZE7&_nc_zt=23&_nc_ht=scontent.fbkk22-3.fna&oh=00_AfAYwLc1YMpNtHzxdArNoozb1-nn8UKCxvkI3OWLQu4qpA&oe=641FC370",
+      "image": "https://i.imgur.com/YuQu4QP.jpeg",
       "year": 2019,
       "description": "เกมพัซเซิลผจญภัยไขปริศนาด้วย Tangram",
       "filter": ["game"]

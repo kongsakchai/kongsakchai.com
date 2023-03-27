@@ -17,7 +17,7 @@
   <div class=" flex flex-row justify-end items-center gap-5 text-base">
     <a title="Projects" href="/projects" class={`${path.includes("/projects") && "font-bold"}`}>Projects</a>
     <a title="Blogs" href="/blogs" class={`${path.includes("/blogs") && "font-bold"}`}>Blogs</a>
-    <a title="Introduct" href="/intro" class={`${path === "/intro" && "font-bold"}`}>Introduct</a>
+    <a title="Introduct" href="/intro" class={`${path === "/intro" && "font-bold"}`}>Introduce</a>
     <a
       title="My Github"
       in:receive={{ key: "github" }}
