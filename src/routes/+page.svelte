@@ -14,7 +14,7 @@
 </script>
 
 <PageComponent align="center">
-  <div class="content-1 font-bold xl:w-1/3 lg:w-1/2 w-[55%] my-[250px]" out:fade={{ duration: 500 }}>
+  <div class="content-1 font-bold xl:w-1/3 lg:w-1/2 w-[55%] my-[150px]" out:fade={{ duration: 500 }}>
     <section in:fly={{ y: 100, duration: 500 }} class=" flex justify-between items-center w-full gap-8">
       <section class=" flex items-start flex-col gap-2">
         <h1 class=" ">Sakchai Paoin</h1>
@@ -25,7 +25,7 @@
       </div>
     </section>
     <section in:fly={{ y: 100, duration: 600 }} class=" flex items-start flex-col gap-3 w-full">
-      <h3 class="topic-under-line">😁 Me</h3>
+      <h3 >😁 Me</h3>
       <p class=" font-normal">
         &emsp I am Sakchai Paoin, a 3rd-year Computer Engineering student at KMUTT. My coding journey began in 2015, and
         I have been passionate about learning new technologies ever since. I am constantly looking for new challenges to
@@ -38,19 +38,19 @@
       </button>
     </section>
     <section in:fly={{ y: 100, duration: 800 }} class=" flex items-start flex-col gap-3 w-full">
-      <h3 class="topic-under-line">👨‍💻 Work Experience</h3>
+      <h3 >👨‍💻 Work Experience</h3>
       <TimelineComponent data={data.data.work} />
     </section>
     <section in:fly={{ y: 100, duration: 900 }} class=" flex items-start flex-col gap-2 w-full">
-      <h3 class="topic-under-line">⭐ Award & Compentition</h3>
+      <h3 >⭐ Award & Compentition</h3>
       <AwardComponent data={data.data.award} />
     </section>
     <section in:fly={{ y: 100, duration: 1000 }} class=" flex items-start flex-col gap-2 w-full">
-      <h3 class="topic-under-line">🎓 Education</h3>
+      <h3 >🎓 Education</h3>
       <Education />
     </section>
     <section in:fly={{ y: 100, duration: 1100 }} class=" flex items-start flex-col gap-2 w-full">
-      <h3 class="topic-under-line">✏️ Skills</h3>
+      <h3 >✏️ Skills</h3>
       <Skill />
     </section>
     <section in:fly={{ y: 100, duration: 1200 }} class="w-full flex flex-row justify-center items-center">
