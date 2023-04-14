@@ -21,6 +21,7 @@
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.28.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.21",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",

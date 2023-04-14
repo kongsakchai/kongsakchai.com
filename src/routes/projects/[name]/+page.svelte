@@ -13,7 +13,7 @@
   <Pathbar
     paths={[
       { title: "Projects", path: "/projects" },
-      { title: data.name, path: "/projects/" + data.name },
+      { title: data.name, path: "/projects/" + data.name.replaceAll(" ","_") },
     ]}
   />
 

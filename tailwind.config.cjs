@@ -12,7 +12,10 @@ module.exports = {
       fontFamily: {
         prompt: ["Prompt", "sans-serif"],
         mplus: ["M PLUS Rounded 1c", "sans-serif"]
-      }
+      },
+      boxShadow: {
+        out: "0 0 3px 0 #90969D",
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@
 
 ## 🖥️Stack
 
-![Play Plern Learn Ground](https://i.imgur.com/NCACfAz.png)
+![Play Plern Learn Ground](https://i.imgur.com/qs6PZL9.png)
 
 ## 🎗️Competitive & Awards
 
