@@ -54,7 +54,7 @@
       <Skill />
     </section>
     <section in:fly={{ y: 100, duration: 1200 }} class="w-full flex flex-row justify-center items-center">
-      <a href="/Sakchai-Resume.pdf" target="_blank" class="button p-2 bg-sky-400 text-white">
+      <a href="/Sakchai_Paoin_Resume.pdf" target="_blank" class="button p-2 bg-sky-400 text-white">
         My Resume {">"}
       </a>
     </section>
