@@ -39,14 +39,6 @@
       "year": 2023,
       "description": "My website by SvelteKit",
       "filter": ["web"]
-    },
-    {
-      "name": "STEPP",
-      "tag": ["Web Application","Hackathon"],
-      "image": "/images/projects/step.png",
-      "year": 2022,
-      "description": "Web Application Project in Magic Hackathon",
-      "filter": ["web"]
     }
   ]
 }

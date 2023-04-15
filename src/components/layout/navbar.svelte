@@ -56,5 +56,3 @@
 <div class=" text-sm" />
 <slot />
 
-<style>
-</style>
